@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container-form {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #4a4aee;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #6464f8;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(51, 51, 52, 0.602);
+    text-align: center;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: #4a4aee;
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 2rem 0;
+}
+
+.formulario input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+.formulario input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+a {
+    color: #333333;
+}
+#nav {
+    background: url("img/gradient.png") repeat-x scroll 0 -110px #7D7D7D;
+    border-radius: 2em 2em 2em 2em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    line-height: 100%;
+    margin: 0;
+    padding: 7px 6px 0;
+}
+#nav li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 5px;
+    padding: 0 0 8px;
+    position: relative;
+}
+#nav a {
+    border-radius: 1.6em 1.6em 1.6em 1.6em;
+    color: #E7E5E5;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+#nav a:hover {
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+}
+#nav .current a, #nav li:hover > a {
+    background: #DDDDDD;
+    border-top: 1px solid #F8F8F8;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #444444;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#nav ul li:hover a, #nav li:hover li a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
+    color: #666666;
+}
+#nav ul a:hover {
+    background: url("img/gradient.png") repeat-x scroll 0 -100px #0078FF !important;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+#nav li:hover > ul {
+    display: block;
+}
+#nav ul {
+    background: url("img/gradient.png") repeat-x scroll 0 0 #DDDDDD;
+    border: 1px solid #B4B4B4;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 35px;
+    width: 185px;
+}
+#nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+#nav ul a {
+    font-weight: normal;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#nav ul ul {
+    left: 181px;
+    top: -3px;
+}
+#nav ul li:first-child > a {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+#nav ul li:last-child > a {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+#nav:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+#nav {
+    display: inline-block;
+}
